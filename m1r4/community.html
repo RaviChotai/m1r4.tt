@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community - M1R4 Fashion</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">M1R4</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="community.html" class="active">Community</a></li>
+            </ul>
+            <button class="cta-btn" id="joinBtn">Join M1R4</button>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>M1R4 Community</h1>
+            <p>Join our growing family of fashion lovers from Trinidad & Tobago and beyond!</p>
+        </div>
+    </section>
+
+    <!-- Community Stats -->
+    <section class="community-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" id="memberCount">0</div>
+                    <div class="stat-label">Community Members</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15</div>
+                    <div class="stat-label">Cities Represented</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Islands Connected</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Caribbean Pride</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Community Section -->
+    <section class="user-list">
+        <div class="container">
+            <h2 class="section-title">Our Members</h2>
+            <div class="community-filters">
+                <button class="filter-btn active" data-filter="all">All Members</button>
+                <button class="filter-btn" data-filter="Port of Spain">Port of Spain</button>
+                <button class="filter-btn" data-filter="San Fernando">San Fernando</button>
+                <button class="filter-btn" data-filter="Scarborough">Scarborough</button>
+                <button class="filter-btn" data-filter="International">International</button>
+            </div>
+            <div id="userDisplay"></div>
+        </div>
+    </section>
+
+    <!-- Join Community CTA -->
+    <section class="join-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Join Our Family?</h2>
+                <p>Become part of the M1R4 community and connect with fellow fashion enthusiasts across the Caribbean!</p>
+                <button class="cta-btn large" id="joinCommunityBtn">Join M1R4 Community</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Modal -->
+    <div id="registrationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 style="margin-bottom: 1.5rem; color: #764ba2;">Join the M1R4 Family</h2>
+            <form id="userForm">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <select id="location" name="location" required>
+                        <option value="">Select your location</option>
+                        <option value="Port of Spain">Port of Spain</option>
+                        <option value="San Fernando">San Fernando</option>
+                        <option value="Chaguanas">Chaguanas</option>
+                        <option value="Scarborough">Scarborough</option>
+                        <option value="Arima">Arima</option>
+                        <option value="Other Trinidad">Other Trinidad</option>
+                        <option value="Other Tobago">Other Tobago</option>
+                        <option value="International">International</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="interests">Fashion Interests</label>
+                    <select id="interests" name="interests" required>
+                        <option value="">What interests you most?</option>
+                        <option value="Carnival Fashion">Carnival Fashion</option>
+                        <option value="Beach Wear">Beach Wear</option>
+                        <option value="Urban Street">Urban Street</option>
+                        <option value="Traditional Wear">Traditional Wear</option>
+                        <option value="All Collections">All Collections</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Join M1R4 Community</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 M1R4 Fashion. Proudly made in Trinidad & Tobago 🇹🇹</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

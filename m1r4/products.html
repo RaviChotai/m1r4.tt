@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - M1R4 Fashion</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">M1R4</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+            <button class="cta-btn" id="joinBtn">Join M1R4</button>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Collections</h1>
+            <p>Discover the finest Caribbean fashion from Trinidad & Tobago</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="container">
+            <div class="product-filters">
+                <button class="filter-btn active" data-filter="all">All Collections</button>
+                <button class="filter-btn" data-filter="carnival">Carnival</button>
+                <button class="filter-btn" data-filter="beach">Beach</button>
+                <button class="filter-btn" data-filter="urban">Urban</button>
+                <button class="filter-btn" data-filter="traditional">Traditional</button>
+            </div>
+
+            <div class="product-grid">
+                <div class="product-card" data-category="carnival">
+                    <div class="product-image">🎭</div>
+                    <div class="product-info">
+                        <h3>Carnival Royalty Dress</h3>
+                        <div class="product-price">$150 TTD</div>
+                        <p>Stunning sequined dress perfect for Carnival celebrations</p>
+                        <button class="product-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="carnival">
+                    <div class="product-image">🌈</div>
+                    <div class="product-info">
+                        <h3>Mas Band Costume</h3>
+                        <div class="product-price">$89 TTD</div>
+                        <p>Vibrant costume for the ultimate Carnival experience</p>
+                        <button class="product-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="beach">
+                    <div class="product-image">🏖️</div>
+                    <div class="product-info">
+                        <h3>Tobago Beach Set</h3>
+                        <div class="product-price">$65 TTD</div>
+                        <p>Comfortable beachwear for Tobago's pristine shores</p>
+                        <button class="product-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="beach">
+                    <div class="product-image">🌺</div>
+                    <div class="product-info">
+                        <h3>Tropical Paradise Bikini</h3>
+                        <div class="product-price">$45 TTD</div>
+                        <p>Floral print bikini inspired by Caribbean flora</p>
+                        <button class="product-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="urban">
+                    <div class="product-image">🏙️</div>
+                    <div class="product-info">
+                        <h3>Port of Spain Nights</h3>
+                        <div class="product-price">$120 TTD</div>
+                        <p>Sophisticated urban wear for city adventures</p>
+                        <button class="product-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="urban">
+                    <div class="product-image">✨</div>
+                    <div class="product-info">
+                        <h3>Downtown Chic Jacket</h3>
+                        <div class="product-price">$180 TTD</div>
+                        <p>Modern blazer perfect for business or pleasure</p>
+                        <button class="product-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="traditional">
+                    <div class="product-image">🌿</div>
+                    <div class="product-info">
+                        <h3>Heritage Collection Dress</h3>
+                        <div class="product-price">$95 TTD</div>
+                        <p>Traditional patterns with contemporary styling</p>
+                        <button class="product-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="traditional">
+                    <div class="product-image">🎨</div>
+                    <div class="product-info">
+                        <h3>Cultural Pride Shirt</h3>
+                        <div class="product-price">$75 TTD</div>
+                        <p>Celebrate Caribbean heritage in style</p>
+                        <button class="product-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Modal -->
+    <div id="registrationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 style="margin-bottom: 1.5rem; color: #764ba2;">Join the M1R4 Family</h2>
+            <form id="userForm">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <select id="location" name="location" required>
+                        <option value="">Select your location</option>
+                        <option value="Port of Spain">Port of Spain</option>
+                        <option value="San Fernando">San Fernando</option>
+                        <option value="Chaguanas">Chaguanas</option>
+                        <option value="Scarborough">Scarborough</option>
+                        <option value="Arima">Arima</option>
+                        <option value="Other Trinidad">Other Trinidad</option>
+                        <option value="Other Tobago">Other Tobago</option>
+                        <option value="International">International</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="interests">Fashion Interests</label>
+                    <select id="interests" name="interests" required>
+                        <option value="">What interests you most?</option>
+                        <option value="Carnival Fashion">Carnival Fashion</option>
+                        <option value="Beach Wear">Beach Wear</option>
+                        <option value="Urban Street">Urban Street</option>
+                        <option value="Traditional Wear">Traditional Wear</option>
+                        <option value="All Collections">All Collections</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Join M1R4 Community</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 M1R4 Fashion. Proudly made in Trinidad & Tobago 🇹🇹</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
