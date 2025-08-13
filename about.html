@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - M1R4 Fashion</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">M1R4</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+            <button class="cta-btn" id="joinBtn">Join M1R4</button>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>About M1R4</h1>
+            <p>Born in the heart of the Caribbean</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Born in the Caribbean</h2>
+                    <p>M1R4 represents the vibrant spirit of Trinidad and Tobago, where fashion meets culture in the most beautiful way. Our designs are inspired by the rich heritage of our twin-island nation.</p>
+                    <p>From the colorful streets of Port of Spain to the serene beaches of Tobago, every piece tells a story of Caribbean excellence and style.</p>
+                    <p>Join our community of fashion enthusiasts who celebrate the unique blend of tradition and modernity that defines Caribbean fashion.</p>
+                </div>
+                <div class="about-image">🇹🇹</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="our-story">
+        <div class="container">
+            <h2 class="section-title">Our Story</h2>
+            <div class="story-grid">
+                <div class="story-card">
+                    <div class="story-icon">🌅</div>
+                    <h3>The Beginning</h3>
+                    <p>Founded in 2020 in Port of Spain, M1R4 started as a dream to showcase Caribbean fashion to the world.</p>
+                </div>
+                <div class="story-card">
+                    <div class="story-icon">🎨</div>
+                    <h3>Our Inspiration</h3>
+                    <p>Drawing from Carnival traditions, steel pan culture, and the natural beauty of our islands.</p>
+                </div>
+                <div class="story-card">
+                    <div class="story-icon">🌍</div>
+                    <h3>Global Vision</h3>
+                    <p>Bringing Trinidad & Tobago's unique style to fashion lovers around the world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values">
+        <div class="container">
+            <h2 class="section-title">Our Values</h2>
+            <div class="values-grid">
+                <div class="value-item">
+                    <h3>🌺 Authenticity</h3>
+                    <p>Every design reflects genuine Caribbean culture and traditions</p>
+                </div>
+                <div class="value-item">
+                    <h3>♻️ Sustainability</h3>
+                    <p>Committed to eco-friendly practices and sustainable fashion</p>
+                </div>
+                <div class="value-item">
+                    <h3>🤝 Community</h3>
+                    <p>Supporting local artisans and celebrating our cultural heritage</p>
+                </div>
+                <div class="value-item">
+                    <h3>✨ Quality</h3>
+                    <p>Premium materials and craftsmanship in every piece</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Modal -->
+    <div id="registrationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 style="margin-bottom: 1.5rem; color: #764ba2;">Join the M1R4 Family</h2>
+            <form id="userForm">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <select id="location" name="location" required>
+                        <option value="">Select your location</option>
+                        <option value="Port of Spain">Port of Spain</option>
+                        <option value="San Fernando">San Fernando</option>
+                        <option value="Chaguanas">Chaguanas</option>
+                        <option value="Scarborough">Scarborough</option>
+                        <option value="Arima">Arima</option>
+                        <option value="Other Trinidad">Other Trinidad</option>
+                        <option value="Other Tobago">Other Tobago</option>
+                        <option value="International">International</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="interests">Fashion Interests</label>
+                    <select id="interests" name="interests" required>
+                        <option value="">What interests you most?</option>
+                        <option value="Carnival Fashion">Carnival Fashion</option>
+                        <option value="Beach Wear">Beach Wear</option>
+                        <option value="Urban Street">Urban Street</option>
+                        <option value="Traditional Wear">Traditional Wear</option>
+                        <option value="All Collections">All Collections</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Join M1R4 Community</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 M1R4 Fashion. Proudly made in Trinidad & Tobago 🇹🇹</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
